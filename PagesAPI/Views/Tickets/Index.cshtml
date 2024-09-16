@@ -1,0 +1,40 @@
+﻿@model ParcialAPI.DAL.Entities.Ticket
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+
+   </head>
+   <body>
+       <div>
+           <h1>Verificación de Tiquetes</h1>
+           <form action="Tickets/Verificar" method="post">
+            <div class="mb-3">
+                <label class="form-label">Id Tiquete:</label>
+                <input class="form-control" type="text" name="id" value=" " />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Puerta Entrada:</label>
+                <input class="form-control" type="text" name="entranceGate" value=" " />
+            </div>
+
+            <input class="btn btn-outline-dark" type="submit" name="Verificar" value="Verificar" />
+           </form>
+       </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
